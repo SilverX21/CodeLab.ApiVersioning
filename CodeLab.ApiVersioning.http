@@ -1,6 +1,10 @@
-@CodeLab.ApiVersioning_HostAddress = http://localhost:5266
+@http = http://localhost:5266
+@https = https://localhost:7013
 
-GET {{CodeLab.ApiVersioning_HostAddress}}/weatherforecast/
+GET {{https}}/api/v1/weatherforecast/
 Accept: application/json
+###
 
+GET {{https}}/api/v2/weatherforecast/
+Accept: application/json
 ###
